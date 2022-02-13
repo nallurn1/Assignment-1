@@ -43,6 +43,8 @@ while i == 0 #getting user input for course contraints file
     end
 end
 
-#Name the output fil
-puts "Enter name for enrollment output file (including .csv): "
-outputfile1 = gets.chomp.to_s
+# #Name the output file
+# puts "Enter name for enrollment plan file, must have the .csv format: "
+# enroll_plan = gets.chomp.to_s
+#puts "Enter name for enrollment plan file, must have the .csv format: "
+# enroll_report = gets.chomp.to_s
