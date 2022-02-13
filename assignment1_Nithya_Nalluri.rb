@@ -1,6 +1,5 @@
-#require 'smarter_csv' #import of smarter_csv gem
-
-require 'csv' #import of csv gem
+#Important gen to read .csv files
+require 'csv' 
 
 puts "\n"
 puts "TCNJ's EasyEnroll Protype Software"
