@@ -1,8 +1,8 @@
 #---------------------
 #  Module Enroll_setup: Has 1 functions 
 #  1) def Enroll_setup.enroll_set_up(c, e)
-#    Parameters:
-#    The parameters for this functions are the objects (for Course, & Enrollment Struct dataclass)
+#  Parameters: The objects of Course, & Enrollment Struct dataclass
+#  Function's Propose: Setting up the enrollment output file values with blanck, and 0 values 
 #----------------
 
 #------Start of Module Enroll_setup-------------------------#

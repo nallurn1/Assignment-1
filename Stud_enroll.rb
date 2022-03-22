@@ -1,15 +1,15 @@
 #---------------------
 #  Module Stud_enroll: Has 1 functions 
 #  1) def Stud_enroll.stud_classes(course, student, enroll, s_e)
-#    Parameters:
-#    The parameters for this functions are the objects (for Course, Students, Enrollment & Stud_Enrollment Struct dataclass)
+#  Parameters: The objects of Course, Students, Enrollment & Stud_Enrollment Struct dataclass
+#  Function's Propose: To fill in the values for the output file, Student Enrollment
 #----------------
 
 #------Start of Module Stud_enroll------------------------------------#
 module Stud_enroll
   #s_e = Stud_Enrollment object
   def Stud_enroll.stud_classes(course, student, enroll, s_e)
-    #Varibles needed for the for loop and if statements
+    #Variables needed for the for loop and if statements
     s_len = student.length
     e_len = enroll.length
     counter = 0

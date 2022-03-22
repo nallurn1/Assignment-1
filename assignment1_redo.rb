@@ -4,7 +4,7 @@
 # Outputs: Creates a file for all the enrolls of students in classes and what classes each student got into
 
 #--------Making the needed connections between all the files and this file (acting as main/driver of the program)--------------#
-#All the modules 
+#All the modules names
 require_relative "Sorting_input"
 require_relative "Sorting_enroll"
 require_relative "Enroll_setup"
@@ -13,7 +13,7 @@ require_relative "Stud_enroll"
 require_relative "Reading_files"
 require_relative "Output_files"
 
-#All the four classes
+#All the four classes names
 require_relative "Students"
 require_relative "Course"
 require_relative "Stud_Enrollment"
@@ -48,9 +48,6 @@ Reading_files.student_file(s, students1) #for course input
 s3 = Sorting_input.sort_by_classes_done(students1)
 s4 = Sorting_input.sort_num_prefs_3(s3)
 s5 = Sorting_input.sort_by_year(s4)
-
-#Debugging: checking the values in student_prefs file
-s5.each{|s|s.print_csv_record}
 
 #Setting up the Enrollment Struct class object
 e = Enrollment.new 

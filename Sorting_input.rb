@@ -3,14 +3,12 @@
 #  1) def Sorting_input.sort_by_year(students)
 #  2) Sorting_input.sort_by_classes_done
 #  3) Sorting_input.sort_num_prefs_3
-#    Parameters:
-#    The parameter for this functions are the objects (for Students Struct dataclass)
+#  Parameters: The object of Students Struct dataclass
 #----------------
 
 #----------Start of Sorting student_pref file Module-------------------#
 module Sorting_input 
-    #Using the bubble sort algorthim to sort the inputs from student_prefs file by year
-    #Sorting for semester to be this task
+    #Function Propose: Using the bubble sort algorthim to sort the inputs from student_prefs input file by number of completed classes
     def sort_by_classes_done(stud)
       stud_len = stud.length-1
       return stud if stud_len < 0
@@ -29,7 +27,7 @@ module Sorting_input
       return stud
     end
 
-  #Using the bubble sort algorthim to sort the inputs from student_prefs file by completed classes
+  #Function Propose: Using the bubble sort algorthim to sort the inputs from student_prefs input file by completed classes
   def sort_num_prefs_3(stud)
     stud_len = stud.length-1
     return stud if stud_len < 0
@@ -40,8 +38,6 @@ module Sorting_input
       (stud.length-1).times do |i|
         if ((stud[i].first).to_s != "N/A" && (stud[i].second).to_s != "N/A" &&  (stud[i].third != "N/A").to_s) 
           c1 = 1
-          print((stud[i].first).to_s)
-          print("    ") 
         else
           c1 = 0
         end
@@ -60,11 +56,9 @@ module Sorting_input
     return stud
   end
 
-  #Using the bubble sort algorthim to sort the inputs from student_prefs file by year
-  #Sorting for semester to be this task
+  #Function Propose: Using the bubble sort algorthim to sort the inputs from student_prefs input file by year
+  #Sorting for semester inorder to sort by year
   def sort_by_year(stud)
-    #Duplicating object, to keep the orginal
-    # stud = stud1.dup
     stud_len = stud.length-1
     return stud if stud_len < 0
 
